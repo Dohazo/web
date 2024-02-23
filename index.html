@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="one.css">
+    <script src="one.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var icons = ["bi bi-bluetooth","bi bi-wifi","bi bi-upload","bi bi-box-arrow-down"];
+        counter = 0;
+        $(document).ready(function(){
+
+            $("#ubah").click(function(){
+                counter += 1;
+                if (counter == icons.length){
+                    counter = 0;
+                }
+               
+                $("#ubahIcon").addClass(icons[counter]);
+                if (counter -1 == -1){
+                    counter == icons.length;
+                }
+                $("#ubahIcon").removeClass(icons[counter-1]);
+            });
+        });
+       
+        //    const observer = new IntersectionObserver((entries) => {
+        //     entries.forEach((entry) => {
+        //         if(entry.isIntersecting){
+        //             entry.target.classList.add('.show');
+        //         }
+        //         else{
+        //             // entry.target.classList.remove('.show');
+        //         }
+        //     });
+        //    });
+        //    const hiddenElements = document.querySelectorAll('.hidden');
+        //    hiddenElements.forEach((el)=>observer.observe(el));
+        ScrollReveal({ duration: 1000 })
+    </script>
+</head>
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg trans shadow-lg rounded-bottom mb-3">
+        <div class="container-fluid text-white">
+          <a class="navbar-brand" href="#" id="ubah"><i class="bi bi-bluetooth text-white" id="ubahIcon"></i></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon text-white"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-white" aria-current="page" href="#one">Eric Yoel</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link text-white" href="#two">Christopher Limantoro</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#three">Marvel Wilbert Odelio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#four">Christian Sampurna Junior</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#five">Seira Bella</a>
+              </li>
+            </ul>
+            <span class="navbar-text text-white">
+                <a class="nav-link text-white" href="#"><span class="pe-3 d-none d-lg-inline">Home</span><span><i class="bi bi-house-fill"></i></span></a>
+              </span>
+          </div>
+        </div>
+      </nav>
+
+ 
+    <section id="welcome show " class="tengah">
+        <h1 class="fw-bolder text-white judul">Welcome to My Website</h1>
+    </section>
+    <section id="one">
+       
+            <div class=" container transparent ">
+                <div class="row">
+                    <div>
+                        <h3 class="text-center text-white family m-3">Eric Yoel</h2>
+                    </div>
+                    <div class="col-8 col-lg-6 ">
+                        <div class="m-2">
+                            <img src="assets/IMG_8115.JPG" alt="Eric Yoel" title="This is me" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-8 col-lg-6 text-white full">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-8">
+                                <h4 class="text-center">DESCRIPTION</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum illum reprehenderit voluptate quae quaerat voluptatibus quam, perspiciatis tenetur incidunt commodi natus dolorem eligendi delectus cumque repudiandae maxime eum repellat illo!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus doloribus aliquam laudantium perspiciatis ducimus! Repudiandae recusandae accusamus nulla fuga incidunt sapiente eos necessitatibus commodi assumenda aliquid. Aliquam quasi ipsa adipisci.
+                                    
+                                </p>
+                            </div>
+                            <div class="col-8 social ">
+                                
+                                <div class="row justify-content-center align-items-center">
+                                    <div class="col-6 text-center ">
+                                       
+                                        <a href="https://www.instagram.com/ericyyoel/" class="text-white ukuran" style="font-size: 50px;" title="@ericcyoel"> <i class="bi bi-instagram icon"></i></a>
+                                       
+                                    </div>
+                                    <div class="col-6 text-center">
+                                        
+                                        <a href="https://openai.com/" class="text-white " style="font-size: 50px;" title="@myymymyom"><i class="bi bi-linkedin icon"></i></a>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>              
+                    </div>
+                </div>
+            </div>
+       
+        
+    </section>
+    <section id="two show" class="">
+        <div class=" container transparent ">
+            <div class="row  ">
+                <div>
+                    <h3 class="text-center text-white family m-3">Christopher Limantoro</h2>
+                </div>
+                <div class="col-8 col-lg-6 ">
+                    <div class="m-4">
+                        <img src="assets/kojul.jpg" alt="Ko CJ" title="Ko CJ" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-8 col-lg-6 text-white mt-4">
+                    <div class="row tinggi justify-content-center align-items-center">
+                        <div class="col-8 mt-4">
+                            <h4 class="text-center">DESCRIPTION</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum illum reprehenderit voluptate quae quaerat voluptatibus quam, perspiciatis tenetur incidunt commodi natus dolorem eligendi delectus cumque repudiandae maxime eum repellat illo!
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus doloribus aliquam laudantium perspiciatis ducimus! Repudiandae recusandae accusamus nulla fuga incidunt sapiente eos necessitatibus commodi assumenda aliquid. Aliquam quasi ipsa adipisci.
+                                
+                            </p>
+                        </div>
+
+                        <div class=" col-8 text-center justify-content-center align-items-center social">
+                                
+                            <div class="justify-content-center align-items-center social">
+                              
+                                   <div class="justify-content-center align-items-center row text-center lebar social">
+        
+                                       <div class="col-6 text-center mb-4">
+        
+                                        <a href="https://www.instagram.com/chrisjul06/" class="text-white ukuran" style="font-size: 50px;" title="@ericcyoel"> <i class="bi bi-instagram icon"></i></a>
+                                       </div>
+                                       <div class="col-6 text-center mb-4">
+                                           
+                                        <a href="https://openai.com/" class="text-white " style="font-size: 50px;" title="@myymymyom"><i class="bi bi-linkedin icon"></i></a>
+                                       </div>
+                                   </div>                  
+                            </div>
+                        </div>
+                    </div>                                     
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="three show">
+        <div class=" container transparent ">
+            <div class="row  ">
+                <div>
+                    <h3 class="text-center text-white family m-3">Marvel Wilbert Odelio</h2>
+                </div>
+                <div class="col-8 col-lg-6 ">
+                    <div class="m-4">
+                        <img src="assets/marvel.jpg" alt="marvel" title="Ini Marvel" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-8 col-lg-6 text-white mt-4">
+                    <div class="row tinggi justify-content-center align-items-center">
+                        <div class="col-8 mt-4">
+                            <h4 class="text-center">DESCRIPTION</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum illum reprehenderit voluptate quae quaerat voluptatibus quam, perspiciatis tenetur incidunt commodi natus dolorem eligendi delectus cumque repudiandae maxime eum repellat illo!
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus doloribus aliquam laudantium perspiciatis ducimus! Repudiandae recusandae accusamus nulla fuga incidunt sapiente eos necessitatibus commodi assumenda aliquid. Aliquam quasi ipsa adipisci.
+                                
+                            </p>
+                        </div>
+
+                        <div class=" col-8 text-center justify-content-center align-items-center social">
+                                
+                            <div class="justify-content-center align-items-center social">
+                              
+                                   <div class="justify-content-center align-items-center row text-center lebar social">
+        
+                                       <div class="col-6 text-center mb-4">
+        
+                                        <a href="https://www.instagram.com/marvelodelio/" class="text-white ukuran" style="font-size: 50px;" title="@ericcyoel"> <i class="bi bi-instagram icon"></i></a>
+                                       </div>
+                                       <div class="col-6 text-center mb-4">
+                                           
+                                        <a href="https://openai.com/" class="text-white " style="font-size: 50px;" title="@myymymyom"><i class="bi bi-linkedin icon"></i></a>
+                                       </div>
+                                   </div>              
+                            </div>
+                        </div>
+                    </div>                   
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="four show">
+        <div class=" container transparent ">
+            <div class="row  ">
+                <div>
+                    <h3 class="text-center text-white family m-3">Christian Sampurna Junior</h2>
+                </div>
+                <div class="col-8 col-lg-6 ">
+                    <div class="m-4">
+                        <img src="assets/christian.jpg" alt="Christian" title="Ini Christian" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-8 col-lg-6 text-white mt-4">
+                    <div class="row tinggi justify-content-center align-items-center">
+                        <div class="col-8 mt-4">
+                            <h4 class="text-center">DESCRIPTION</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum illum reprehenderit voluptate quae quaerat voluptatibus quam, perspiciatis tenetur incidunt commodi natus dolorem eligendi delectus cumque repudiandae maxime eum repellat illo!
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus doloribus aliquam laudantium perspiciatis ducimus! Repudiandae recusandae accusamus nulla fuga incidunt sapiente eos necessitatibus commodi assumenda aliquid. Aliquam quasi ipsa adipisci.
+                                
+                            </p>
+                        </div>
+
+                        <div class=" col-8 text-center justify-content-center align-items-center social">
+                                
+                            <div class="justify-content-center align-items-center social">
+                              
+                                   <div class="justify-content-center align-items-center row text-center lebar social">
+        
+                                       <div class="col-6 text-center mb-4">
+        
+                                        <a href="https://www.instagram.com/chrissamp_/" class="text-white ukuran" style="font-size: 50px;" title="@ericcyoel"> <i class="bi bi-instagram icon"></i></a>
+                                       </div>
+                                       <div class="col-6 text-center mb-4">
+                                           
+                                        <a href="https://openai.com/" class="text-white " style="font-size: 50px;" title="@myymymyom"><i class="bi bi-linkedin icon"></i></a>
+                                       </div>
+                                   </div>                                                                                                                            
+                            </div>
+                        </div>
+                    </div>                                       
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="five show" class="">
+        <div class=" container transparent ">
+            <div class="row  ">
+                <div>
+                    <h3 class="text-center text-white family m-3">Seira Bella</h2>
+                </div>
+                <div class="col-8 col-lg-6 ">
+                    <div class="m-4">
+                        <img src="assets/seirabel.jpg" alt="Seirabel" title="ini Seirabel" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-8 col-lg-6 text-white mt-4">
+                    <div class="row tinggi justify-content-center align-items-center">
+                        <div class="col-8 mt-4">
+                            <h4 class="text-center">DESCRIPTION</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum illum reprehenderit voluptate quae quaerat voluptatibus quam, perspiciatis tenetur incidunt commodi natus dolorem eligendi delectus cumque repudiandae maxime eum repellat illo!
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus doloribus aliquam laudantium perspiciatis ducimus! Repudiandae recusandae accusamus nulla fuga incidunt sapiente eos necessitatibus commodi assumenda aliquid. Aliquam quasi ipsa adipisci.       
+                            </p>
+                        </div>
+
+                        <div class=" col-8 text-center justify-content-center align-items-center social">
+                                
+                            <div class="justify-content-center align-items-center social">
+                              
+                                   <div class="justify-content-center align-items-center row text-center lebar social">
+        
+                                       <div class="col-6 text-center mb-4">
+        
+                                        <a href="https://www.instagram.com/seirabel/" class="text-white ukuran" style="font-size: 50px;" title="@ericcyoel"> <i class="bi bi-instagram icon"></i></a>
+                                       </div>
+                                       <div class="col-6 text-center mb-4">
+                                           
+                                        <a href="https://openai.com/" class="text-white " style="font-size: 50px;" title="@myymymyom"><i class="bi bi-linkedin icon"></i></a>
+                                       </div>
+                                   </div>                             
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        
+    </script>
+</body>
+</html>
